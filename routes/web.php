@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// This will only match text that does not begin with the API slash.
+Route::get('/{any?}', function () {
     return view('welcome');
-});
+})->where('any', '^(?!api\/)[\/\w\.\,-]*');
