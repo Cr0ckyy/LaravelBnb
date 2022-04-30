@@ -15,6 +15,10 @@
 </template>
 
 <script>
+// Vue file consists of free optional parts
+
+
+// Mounted is a lifecycle event that is always triggered whenever this component is rendered to your browser's DOM.
 export default {
     mounted() {
         console.log('Component mounted.')
